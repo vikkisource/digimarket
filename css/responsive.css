@@ -1,0 +1,108 @@
+@media (max-width:1400px) {
+    .dm-main-layouts{
+        width: 90%;
+    }
+    .dm-banner-img{
+        right: 0;
+    }
+}
+@media (max-width:1200px) {
+   
+    .dm-banner-img{
+        top: -202px;
+        width: 400px;
+    }
+    .dm-choose-layout{
+        display: block;
+    }
+    .dm-choose-left,.dm-choose-right{
+        width: 100%;
+    }
+    .dm-choose-left{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:768px) {
+    .dm-trust-group{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .dm-trust-group img{
+       margin: 10px;
+    }
+    .dm-service-group,.dm-count-layouts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .dm-count-box{
+        margin: 10px;
+    }
+    .dm-ads-layouts {
+        display: block;
+    }
+    .dm-ads-left img{
+        width: 75%;
+        height: 280px;
+        margin: 0 auto;
+    }
+    .dm-ads-left,.dm-ads-right{
+        width: 100%;
+    }
+    .dm-blog-row{
+        white-space: nowrap;
+    }
+    .dm-blog-cart{
+        width: 100%;
+        display: block;
+    }
+    .dm-footer-layout{
+        display: block;
+    }
+    .dm-footer-ban{
+        width: 80%;
+    }
+    .dm-input-field,.dm-footer-part1,.dm-footer-part2,.dm-choose-cart,.dm-banner-left{
+        width: 100%;
+    }
+    .dm-choose-group,.dm-header-layout{
+        display: block;
+    }
+    .dm-choose-cart{
+        margin: 20px;
+    }
+    .dm-banner-layout {
+        display: block;
+    }
+    .dm-banner-img{
+        top: 0;
+    left: 0;
+    }
+    .dm-trust-layouts{
+        padding: 30px 0px;
+    }
+    .dm-menus li{
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .dm-menus li:last-child{
+        display: none;
+    }
+    .dm-heading{
+        font-size: 25px;
+    }
+    .dm-ads-layouts{
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    .dm-footer-ban{
+        height: auto;
+    }
+}
+
+@media (max-width:400px){
+    .dm-banner-img{
+        width: 100%;
+        height: 400px;
+    }
+}

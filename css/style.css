@@ -1,0 +1,583 @@
+@import url('variable.css');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: Poppins-Extrabold;
+    src: url('../fonts/Poppins/Poppins-ExtraBold.ttf');
+}
+@font-face {
+    font-family: Ubuntu-bold;
+    src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
+body{
+    font-family: Poppins-Regular;
+}
+.bg-layout-red{
+    background-color: var(--primary-bg-red);
+}
+.bg-layout-white{
+    background-color: var(--primary-bg-white);
+}
+.dm-main-layouts{
+    width:1115px ;
+    margin: 0 auto;
+}
+.dm-layouts{
+    width: 100%;
+}
+.dm-flex{
+    display: flex;
+}
+.dm-align-center{
+    align-items: center;
+}
+.dm-justify-between{
+    justify-content: space-between;
+}
+.dm-text-center{
+    text-align: center;
+}
+.dm-text-red{
+    color: var( --primary-red-text);
+}
+.dm-flex-wrap{
+    flex-wrap: wrap;
+}
+.dm-title{
+    font-family: Poppins-Medium;
+}
+.dm-heading{
+   
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.dm-heading-fonts{
+    font-family: Ubuntu-bold;
+}
+.dm-hi-para{
+    font-size: 14px;
+    width: 70%;
+    margin:  0 auto;
+}
+.dm-btn{
+   border: none;
+   background-color: #c60c49; 
+   border-radius: 5px;
+   padding: 10px 30px;
+   outline: none; 
+   color: #fff; 
+   font-size: 16px;            
+}
+.dm-btn a{
+    color: #fff;
+}
+.dm-btn:hover{
+    cursor: pointer;
+    background-color: #a50a3d;
+}
+
+              /* ---------------------------------------------------------------------------------
+                                        Header Part Start Here
+              -------------------------------------------------------------------------------  */
+
+              .dm-header-layout{
+                padding: 22px 0px;
+              }
+              .dm-menus li{
+                display: inline-block;
+                padding: 0px 17px;
+
+              }
+              .dm-menus li a{
+                color: var(--primary-white);
+                font-family: Poppins-Bold;
+              }
+              .dm-menus li:last-child{
+                padding-right: 0px;
+              }
+              .dm-banner-heading{
+                color: #fff;
+                font-size: 50px;
+                padding-bottom: 10px;
+              }
+              .dm-ban-btn{
+                border: none;
+                background-color: #fff;
+                outline: none;
+                color: #000;
+                padding: 10px 40px;
+                font-family: Poppins-Medium;
+                font-size: 18px;
+                margin-top: 25px;
+                border-radius: 5px;
+              }
+
+              /* ---------------------------------------------------------------------
+                         Header Part End here
+              ---------------------------------------------------------------------            */
+
+              /* ------------------------------------------------------------------------------
+                          Banner Part Start here
+              -------------------------------------------------------------------------------             */
+              .dm-banner-layout{
+                padding: 30px 0px 65px 0px;
+                height: 785px;
+                position: relative;
+              }
+              .dm-banner-right{
+                position: relative;
+                width: 50%;
+              }
+              .dm-banner-left{
+                width: 50%;
+              }
+              .dm-banner-img{
+                position: absolute;
+                top: -332px;
+                right: -55px;
+              }
+               /* -------------------------------------------------------------------
+                         Trust Part Start here
+               -------------------------------------------------------------------           */
+               .dm-trust-layouts{
+                padding: 30px 70px;
+               ; box-shadow: 1px 1px 1px 1px #cccc
+               }
+               .dm-trust-group{
+                padding-top: 40px;
+               }
+               .dm-trust-container{
+                padding: 65px;
+               }
+
+               /* ----------------------------------------------------------------
+                    Trust Part End here
+               ----------------------------------------------------------------      */
+               .dm-service-box{
+                width: 202px;
+                height: 142px;
+                border: 1px solid #dcdcdc;
+                margin-right:10px ;
+                margin-bottom: 10px;
+                text-align: center;
+                padding: 20px;
+                position: relative;
+               }
+               .dm-service-box img{
+                margin-bottom: 15px;
+               }
+               .dm-service-group{
+                padding-top: 65px;
+               }
+               .dm-service-layout{
+                padding: 60px 0px;
+               }
+               .dm-service-box:hover{
+                border-color: transparent;
+                box-shadow: 1px 1px 0px 3px #cccccc12;
+               }
+               .dm-service-box:hover::after{
+                content: '';
+                position: absolute;
+                
+                    width: 0; 
+                    height: 0;
+                    border-top: 20px solid #0000000f;;
+                    border-left: 11px solid transparent;
+                    border-right: 11px solid transparent;
+                    bottom: -22px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    
+               }
+
+               /* -----------------------------------------------------------
+                             Service Part End here
+               -----------------------------------------------------------               */
+
+               /* --------------------------------------------------------------
+                    Advertisement part Start here
+            -----------------------------------------------------------------        */
+
+            .dm-ads-layouts{
+                
+                padding: 30px 60px;
+                margin-bottom: 140px;
+            }
+            .dm-ads-left{
+                width: 40%;
+            }
+            .dm-ads-right{
+                width: 50%;
+            }
+            .dm-ads-style{
+                padding-top: 1px solid #dcdcdc;
+                box-shadow: 1px 1px 0px 3px #cccccc12;
+            }
+            .dm-ad-para{
+                font-size: 14px;
+    font-family: 'Poppins-Medium';
+    padding: 5px 0px;
+            }
+            .dm-ad-btn,.dm-ad2-btn{
+                margin-top: 25px;
+            }
+             .dm-ad2-para{
+                font-size: 14px;
+                font-family: Poppins-Medium;
+                padding: 10px 0px;
+             }
+
+            /* ---------------------------------------------------------------------------
+                      Advertisement part End here
+            --------------------------------------------------------------------------           */
+
+            /* ---------------------------------------------------
+                          Count Part Start here
+            ---------------------------------------------------     */
+ 
+            .dm-count-layouts{
+                box-shadow: 1px 1px 1px 1px #cccc;
+                padding: 40px;
+                margin-bottom: 60px;
+            }
+            .dm-count-box{
+                text-align: center;
+            }
+            .dm-count-number{
+                
+    font-size: 50px;
+
+            }
+            .dm-count-name{
+                font-family: Poppins-Medium;
+                font-size: 20px;
+                padding-bottom: 15px;
+            }
+
+            /* ---------------------------------------------------------
+                       Count Part End here
+            ----------------------------------------------------------            */
+
+            /* ---------------------------------------------------------
+                   Choose Part Start here
+             -------------------------------------------------------       */
+             .dm-choose-layout{
+                margin: 120px 0px 60px 0px;
+             }
+             .dm-choose-left,.dm-choose-right{
+                width: 48%;
+             }
+             .dm-choose-cart{
+                width: 255px ;
+                height: 250px;
+                box-shadow: 1px 1px 1px 1px #cccc;
+                margin: 10px 0px;
+                padding: 25px 15px;
+                overflow: hidden;
+             }
+             .dm-choose-title{
+                padding-bottom: 20px;
+                font-size: 13px;
+             }
+            .dm-cho-para{
+                font-size: 13px;
+                padding: 0px 0px 20px 0px;
+            }
+            .dm-list-round{
+                width: 10px;
+                height: 10px;
+                background-color: #c60c49;
+                border-radius: 50%;
+                margin-right: 10px;
+                margin-left: 20px;
+                margin-top:6px;
+            }
+            .dm-list li{
+                align-items: flex-start;
+                margin: 10px 0px;
+            }
+            .dm-list li p.dm-list-text{
+                font-size: 13px;
+            }
+            .dm-ch-btn{
+                margin-top: 20px;
+            }
+            .dm-cart-img{
+                width: 58px;
+                height: 58px;
+                border-radius: 5px;
+                background-color: #b4b4b4;
+                margin-bottom:20px ;
+            }
+            .dm-cart-img img{
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+            .dm-cart-title{
+                font-size: 24px;
+                padding-bottom: 20px;
+            }
+            .dm-cart-para{
+                font-size: 12px;
+            }
+            .dm-row2{
+                padding-top: 30px;
+            }
+
+            /* -----------------------------------------------------
+                   Testimonial Part start here
+             -----------------------------------------------------       */
+             .dm-testi-layouts{
+                padding: 60px 0px;
+             }
+             .dm-testi-img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: pink;
+                margin: 0 auto;
+                margin-bottom: 20px;
+             }
+             .dm-testi-box{
+                margin-top: 132px;
+             }
+             .dm-testi-para{
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                padding-bottom: 20px;
+             }
+
+             /* ----------------------------------------------------
+                     Blog Part start here
+             -----------------------------------------------------         */
+             .dm-blog-title{
+                padding-bottom: 10px;
+
+                font-size: 14px;
+             }
+             .dm-blog-layout{
+                padding-bottom: 70px;
+             }
+             .dm-blog-group{
+                padding-top: 65px;
+                padding-bottom: 135px;
+             }
+             .dm-blog-row{
+                padding-bottom: 45px;
+                width: 100%;
+                overflow: hidden;
+                white-space: wrap;
+             }
+             .dm-blog-cart{
+                width: 350px;
+                height: 250px;
+                margin-right: 29px;
+                border-radius: 5px;
+                background-color: tomato;
+                /* background-image: url('../img/bg-blog.jpg'); */
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 30px 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+             }
+             .dm-blog-date{
+                color: #fff;
+                padding-bottom: 15px;
+             }
+             .dm-blog-cart-title{
+                font-family: Poppins-Bold;
+                font-size: 20px;
+                color: #fff;
+             }
+             .dm-blog-readmore{
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-family: Poppins-Medium;
+                
+             }
+             .dm-blog-readmore i{
+                padding-left: 8px;
+             }
+             i.ri-share-fill{
+                color: #fff;
+             }
+             .dm-dots-parent{
+                justify-content: center;
+             }
+             .dm-blog-dots{
+                margin-right: 10px;
+                width: 5px;
+                height: 5px;
+                background-color: #b4b4b4;
+                border-radius: 50%;
+             }
+             .dm-blog-dots.active{
+                background-color: var(--primary-bg-red);
+                transform: scale(1.5);
+             }
+  
+                
+              /* --------------------------------------------------------------
+                         Footer Part Start here
+              ------------------------------------------------------------            */
+              .dm-t-white,.dm-foo-menu li a{
+                color: #fff;
+              }
+              .bg-footer-layout{
+                background-color: #191234;
+
+              }
+              .dm-footer-layout{
+                padding-top: 115px;
+                padding-bottom: 50px;
+                position: relative;
+              }
+              .dm-footer-ban{
+                position: absolute;
+                width: 825px;
+                height: 142px;
+                top: -70px;
+                left: 50%;
+                background-color: #fff;
+                transform: translateX(-50%);
+                text-align: center;
+                box-shadow: 1px 1px 1px 1px #cccc;
+                padding: 25px 30px 20px 30px;
+              }
+              .dm-ban-head{
+                font-size: 25px;
+                padding-bottom: 20px;
+              }
+
+               .dm-footer-text{
+                color: #fff;
+                font-size: 14px;
+               padding: 25px 5px 35px 0px;
+            
+               }
+               .dm-footer-part1{
+                width: 25%;
+               }
+               .dm-social-follow li{
+                margin-right: 10px;
+               }
+               .dm-social-follow li a{
+                color: #fff;
+               }
+               .dm-foo-title{
+                  font-family: Poppins-Bold;
+                  color: #fff;
+                  padding-bottom: 35px;
+               }
+               .dm-footer-part2{
+                width: 15%;
+               }
+               .dm-address{
+                padding-bottom: 20px;
+               }
+               .dm-cont-info{
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+               }
+               .dm-cont-info i{
+                padding-right: 10px;
+               }
+               .dm-foo-menu li{
+                margin-bottom: 15px;
+               }
+               .dm-input-field{
+                width: 257px;
+                padding: 10px 70px 10px 20px;
+                height: 57px;
+                outline: none;
+                border: none;
+                background-color: #fff;
+                border-radius: 5px;
+               }
+               .dm-input-parent{
+                position: relative;
+
+               }
+               .dm-sub-btn{
+                width: 64px;
+                position: absolute;
+                right: -3px;
+                top: 0;
+                background-color: #c60c49;
+                height: 57px;
+                
+                border: none;
+                outline: none;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                
+               }
+               .dm-sub-btn i{
+                font-size: 25px;
+               }
+
+               .dm-footer-btm-layout{
+                padding: 30px 0px;
+               }
+               .bg-foo-btm-layout{
+                background-color: #ac0038;
+               }
+
+
+               /* ---------------------------------------------
+                     Animation
+               ---------------------------------------------       */
+
+               .check-it,.spec-left{
+                transform: translateX(-203px);
+                position: relative;
+                opacity: 0;
+                transition:  all 3s ease;
+            }
+            .check-it.active,.spec-left.active{
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            .reveal{
+                position: relative;
+                transform: translateY(50px);
+                opacity: 0;
+                transition: all 2s ease;
+                overflow: hidden;
+              }
+              
+              .reveal.active{
+                transform: translateY(0px);
+                opacity: 1;
+              }
